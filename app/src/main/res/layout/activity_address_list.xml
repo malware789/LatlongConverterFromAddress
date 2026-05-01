@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Filter chips row -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="#F5F5F5"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/filterContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFilterAll"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="All"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnFilterPending"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Pending"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnFilterGeocoding"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Geocoding"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnFilterGeocoded"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Geocoded"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnFilterUploading"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Uploading"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnFilterSent"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Sent"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnFilterFailedTemp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Temp Failed"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/btnFilterFailedPerm"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Perm Failed"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Retry action buttons (shown only for failure filters) -->
+    <LinearLayout
+        android:id="@+id/retryActionsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:background="#FFF8E1">
+
+        <Button
+            android:id="@+id/btnRetryTemp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Retry Temp Failures"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnRetryPerm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Retry Perm Failures"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnClearPerm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Clear Perm"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- Item count label -->
+    <TextView
+        android:id="@+id/tvListCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:textColor="#555555"
+        android:text="Showing 0 items" />
+
+    <!-- List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAddresses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

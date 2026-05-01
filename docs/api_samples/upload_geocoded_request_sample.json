@@ -1,0 +1,21 @@
+{
+  "batchId": "550e8400-e29b-41d4-a716-446655440000",
+  "items": [
+    {
+      "id": "server_id_101",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA",
+      "latitude": 37.422,
+      "longitude": -122.084,
+      "geocodeStatus": "SUCCESS",
+      "errorMessage": null
+    },
+    {
+      "id": "server_id_103",
+      "address": "Invalid Address Nowhere",
+      "latitude": null,
+      "longitude": null,
+      "geocodeStatus": "FAILED_PERM",
+      "errorMessage": "Zero results found"
+    }
+  ]
+}

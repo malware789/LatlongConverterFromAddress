@@ -1,0 +1,100 @@
+TEST_001 | India Gate, New Delhi, India
+TEST_002 | Gateway of India, Mumbai, India
+TEST_003 | Charminar, Hyderabad, India
+TEST_004 | Taj Mahal, Agra, India
+TEST_005 | Qutub Minar, New Delhi, India
+TEST_006 | Red Fort, Delhi, India
+TEST_007 | Hawa Mahal, Jaipur, India
+TEST_008 | Amer Fort, Jaipur, India
+TEST_009 | Golden Temple, Amritsar, India
+TEST_010 | Lotus Temple, New Delhi, India
+TEST_011 | Victoria Memorial, Kolkata, India
+TEST_012 | Mysore Palace, Mysore, India
+TEST_013 | Meenakshi Amman Temple, Madurai, India
+TEST_014 | Ajanta Caves, Maharashtra, India
+TEST_015 | Ellora Caves, Maharashtra, India
+TEST_016 | Konark Sun Temple, Odisha, India
+TEST_017 | Khajuraho Temples, Madhya Pradesh, India
+TEST_018 | Sanchi Stupa, Madhya Pradesh, India
+TEST_019 | Jaisalmer Fort, Rajasthan, India
+TEST_020 | Gwalior Fort, Madhya Pradesh, India
+TEST_021 | Chittorgarh Fort, Rajasthan, India
+TEST_022 | Golconda Fort, Hyderabad, India
+TEST_023 | Brihadisvara Temple, Thanjavur, India
+TEST_024 | Mahabalipuram Monuments, Tamil Nadu, India
+TEST_025 | Hampi Ruins, Karnataka, India
+TEST_026 | Pattadakal Monuments, Karnataka, India
+TEST_027 | Elephanta Caves, Mumbai, India
+TEST_028 | Rani ki Vav, Gujarat, India
+TEST_029 | Champaner-Pavagadh Park, Gujarat, India
+TEST_030 | Humayun's Tomb, New Delhi, India
+TEST_031 | Jantar Mantar, Jaipur, India
+TEST_032 | Great Living Chola Temples, Tamil Nadu, India
+TEST_033 | Kaziranga National Park, Assam, India
+TEST_034 | Keoladeo National Park, Rajasthan, India
+TEST_035 | Manas Wildlife Sanctuary, Assam, India
+TEST_036 | Sundarbans National Park, West Bengal, India
+TEST_037 | Nanda Devi National Park, Uttarakhand, India
+TEST_038 | Valley of Flowers National Park, Uttarakhand, India
+TEST_039 | Western Ghats, India
+TEST_040 | Great Himalayan National Park, Himachal Pradesh, India
+TEST_041 | Khangchendzonga National Park, Sikkim, India
+TEST_042 | Nalanda Mahavihara, Bihar, India
+TEST_043 | Capitol Complex, Chandigarh, India
+TEST_044 | Ahmedabad Historic City, Gujarat, India
+TEST_045 | Victorian Gothic and Art Deco Ensembles, Mumbai, India
+TEST_046 | Jaipur City, Rajasthan, India
+TEST_047 | Dholavira, Gujarat, India
+TEST_048 | Kakatiya Rudreshwara Temple, Telangana, India
+TEST_049 | Santiniketan, West Bengal, India
+TEST_050 | Hoysala Temples, Karnataka, India
+TEST_051 | Statue of Liberty, New York, USA
+TEST_052 | Eiffel Tower, Paris, France
+TEST_053 | Colosseum, Rome, Italy
+TEST_054 | Great Wall of China, China
+TEST_055 | Machu Picchu, Peru
+TEST_056 | Petra, Jordan
+TEST_057 | Chichen Itza, Mexico
+TEST_058 | Christ the Redeemer, Rio de Janeiro, Brazil
+TEST_059 | Pyramids of Giza, Egypt
+TEST_060 | Stonehenge, UK
+TEST_061 | Sydney Opera House, Sydney, Australia
+TEST_062 | Mount Everest, Nepal
+TEST_063 | Burj Khalifa, Dubai, UAE
+TEST_064 | Grand Canyon, USA
+TEST_065 | Niagara Falls, Canada/USA
+TEST_066 | Great Barrier Reef, Australia
+TEST_067 | Amazon Rainforest, Brazil
+TEST_068 | Sahara Desert, Africa
+TEST_069 | Antarctica
+TEST_070 | Northern Lights, Iceland
+TEST_071 | Louvre Museum, Paris, France
+TEST_072 | British Museum, London, UK
+TEST_073 | Vatican City
+TEST_074 | Sagrada Familia, Barcelona, Spain
+TEST_075 | Acropolis, Athens, Greece
+TEST_076 | Kremlin, Moscow, Russia
+TEST_077 | Forbidden City, Beijing, China
+TEST_078 | Mount Fuji, Japan
+TEST_079 | Angkor Wat, Cambodia
+TEST_080 | Ha Long Bay, Vietnam
+TEST_081 | Bali, Indonesia
+TEST_082 | Maldives
+TEST_083 | Bora Bora, French Polynesia
+TEST_084 | Santorini, Greece
+TEST_085 | Amalfi Coast, Italy
+TEST_086 | Swiss Alps, Switzerland
+TEST_087 | Serengeti National Park, Tanzania
+TEST_088 | Victoria Falls, Zambia/Zimbabwe
+TEST_089 | Table Mountain, Cape Town, South Africa
+TEST_090 | Uluru, Australia
+TEST_091 | Milford Sound, New Zealand
+TEST_092 | Galapagos Islands, Ecuador
+TEST_093 | Easter Island, Chile
+TEST_094 | Angel Falls, Venezuela
+TEST_095 | Iguazu Falls, Argentina/Brazil
+TEST_096 | Salar de Uyuni, Bolivia
+TEST_097 | Lake Baikal, Russia
+TEST_098 | Dead Sea, Israel/Jordan
+TEST_099 | Mount Kilimanjaro, Tanzania
+TEST_100 | Times Square, New York, USA

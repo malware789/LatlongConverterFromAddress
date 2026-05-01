@@ -1,0 +1,14 @@
+{
+  "addresses": [
+    {
+      "serverId": "server_id_101",
+      "address": "1600 Amphitheatre Parkway, Mountain View, CA"
+    },
+    {
+      "serverId": "server_id_102",
+      "address": "1 Infinite Loop, Cupertino, CA"
+    }
+  ],
+  "nextCursor": "server_id_102",
+  "hasMore": true
+}

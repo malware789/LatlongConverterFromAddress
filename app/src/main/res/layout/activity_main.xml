@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- ── Worker Status ── -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Worker Status"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvProgressMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Waiting…"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvGeocoderMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geocoder: FAKE"
+            android:textColor="#388E3C"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- ── Control Buttons ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Start Work"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cancel Work"
+                android:layout_marginEnd="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+
+            >
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Reset Data"
+                android:minLines="2"
+                android:maxLines="2"
+                android:layout_gravity="center"
+
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnRetryFailed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Retry Temp"
+                android:minLines="2"
+                android:maxLines="2"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btnViewAddresses"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:maxLines="2"
+                android:layout_gravity="center"
+                android:text="Inspect Rows" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnManualImport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual Import (Address List)"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnGoToExcel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excel Geocoding Flow"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="10dp" />
+
+        <!-- ── Counts ── -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address Counts"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvTotalCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: 0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvPendingCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pending Geocode: 0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvGeocodingCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geocoding: 0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvGeocodedPendingUploadCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geocoded Pending Upload: 0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvUploadingCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uploading: 0"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvSentCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sent: 0"
+            android:textColor="#2E7D32"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvTempFailedCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temp Failed: 0"
+            android:textColor="#F57C00"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvPermFailedCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perm Failed: 0"
+            android:textColor="#C62828"
+            android:textSize="13sp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- ── Worker Logs ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Worker Logs (latest 50)"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#1976D2" />
+
+            <Button
+                android:id="@+id/btnClearLogs"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Clear"
+                android:textSize="11sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+        </LinearLayout>
+
+        <!-- Fixed-height log list so it doesn't fight ScrollView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLogs"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#F8F8F8"
+            android:nestedScrollingEnabled="true" />
+
+    </LinearLayout>
+</ScrollView>

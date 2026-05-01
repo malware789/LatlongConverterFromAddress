@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.excel.ExcelConversionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excel Conversion Flow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File: None selected"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Idle"
+                android:layout_marginTop="8dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginTop="16dp">
+
+                <TextView android:text="Total Address Cells:" android:padding="4dp"/>
+                <TextView android:id="@+id/tvTotalCount" android:text="0" android:gravity="end" android:padding="4dp"/>
+
+                <TextView android:text="Pending:" android:padding="4dp"/>
+                <TextView android:id="@+id/tvPendingCount" android:text="0" android:textColor="#FF9800" android:gravity="end" android:padding="4dp"/>
+
+                <TextView android:text="Geocoded:" android:padding="4dp"/>
+                <TextView android:id="@+id/tvGeocodedCount" android:text="0" android:textColor="#4CAF50" android:gravity="end" android:padding="4dp"/>
+
+                <TextView android:text="Failed Perm:" android:padding="4dp"/>
+                <TextView android:id="@+id/tvFailedCount" android:text="0" android:textColor="#F44336" android:gravity="end" android:padding="4dp"/>
+            </GridLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnImportExcel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Import Excel File" />
+
+            <Button
+                android:id="@+id/btnStartWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Excel Conversion"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnCancelWork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel Conversion"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnExportExcel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Export Converted Excel"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnClearJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear Excel Job"
+                android:backgroundTint="#F44336"
+                android:layout_marginTop="32dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
